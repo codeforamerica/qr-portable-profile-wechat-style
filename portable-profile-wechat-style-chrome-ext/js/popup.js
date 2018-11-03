@@ -1,4 +1,4 @@
-$.get("http://localhost/portable-profile-wechat-style/chrome-ext-server-support/qr-code-info-json.php", function(data) {	
+$.get("http://localhost/portable-profile-wechat-style/git/chrome-ext-server-support/qr-code-info-json.php", function(data) {	
 	qr_code_info = JSON.parse(data);
 	
 	$("#qr_code").html("<img src='"+qr_code_info["image"]+"'>");
