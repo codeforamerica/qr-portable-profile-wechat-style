@@ -18,6 +18,6 @@ Support collaboration across silos in the workforce system, and give service pro
 
 ### User Flow
 
-![screenshot-1](https://github.com/codeforamerica/qr-portable-profile/blob/master/readme/screenshots/1.png)
+![screenshot-1](https://github.com/codeforamerica/qr-portable-profile-wechat-style/blob/master/readme/screenshots/1.png)
 ***
-![screenshot-2](https://github.com/codeforamerica/qr-portable-profile/blob/master/readme/screenshots/2.png)
+![screenshot-2](https://github.com/codeforamerica/qr-portable-profile-wechat-style/blob/master/readme/screenshots/2.png)
