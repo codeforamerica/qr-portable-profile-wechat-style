@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener(function(data_from_extension, sender, sendR
 	
 	function check_for_data() {
 	    setTimeout(function () {
-			$.get("http://portable-profile-v2.herokuapp.com/controllers/get-data.php?qr_code_id="+qr_code_info["id"], function(data) {
+			$.get("https://portable-profile-v2.herokuapp.com/controllers/get-data.php?qr_code_id="+qr_code_info["id"], function(data) {
 				if(data) {
 					var user_info = JSON.parse(data);
 
