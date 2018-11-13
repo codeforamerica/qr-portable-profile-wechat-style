@@ -1,4 +1,4 @@
-# 📱 &nbsp; Portable Profile and Referral System ("WeChat Style")
+# 📱 Portable Profile and Referral System ("WeChat Style")
 ### QR-code based system for helping job seekers stay in control of their data and share with different service providers.
 
 ⚡️ [View Live Site](https://portable-profile-v2.herokuapp.com)
