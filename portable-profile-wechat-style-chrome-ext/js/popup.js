@@ -1,4 +1,4 @@
-$.get("https://portable-profile-v2.herokuapp.com/chrome-ext-server-support/qr-code-info-json.php", function(data) {	
+$.get("http://portable-profile-v2.herokuapp.com/chrome-ext-server-support/qr-code-info-json.php", function(data) {	
 	qr_code_info = JSON.parse(data);
 	
 	$("#qr_code").html("<img src='"+qr_code_info["image"]+"'>");
