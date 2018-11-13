@@ -28,6 +28,17 @@
 		<br>
 		<span style="font-size: 32px; vertical-align: -7px;">📑</span>&nbsp;&nbsp;&nbsp;<a href="views/provider/generic-form.php" target="_blank">Generic Intake Form</a>
 		<br>
+		<br>
+		<br>
+		<br>	
+		<span style="font-size: 32px; vertical-align: -7px;">⏳</span>&nbsp;&nbsp;&nbsp;<a href="https://www.caljobs.ca.gov/vosnet/registration/ind/default.aspx?enc=gVHgkZdEt8i2WVp9Z4ElaKb1jAJgpvnwfm+VhdDQeg8=" target="_blank">CalJOBS</a>	
+		<br>
+		<br>		
+		<span style="font-size: 32px; vertical-align: -7px;">💵</span>&nbsp;&nbsp;&nbsp;<a href="https://uio.edd.ca.gov/UIO/Pages/Public/ExternalUser/ClaimantAccountRegistrationNewUser.aspx" target="_blank">Unemployment Insurance</a>
+		<br>
+		<br>	
+		<span style="font-size: 32px; vertical-align: -7px;">🥑</span>&nbsp;&nbsp;&nbsp;<a href="https://www.mybenefitscalwin.org/mbp/create/personalinfo.htm?county=38" target="_blank">MyBenefits CalWIN</a>
+		<br>
 		<br>	
 		<br>
 		<br>
