@@ -1,5 +1,9 @@
-# 📱 Portable Profile and Referral System ("WeChat Style")
+# 📱 &nbsp; Portable Profile and Referral System ("WeChat Style")
 ### QR-code based system for helping job seekers stay in control of their data and share with different service providers.
+
+⚡️ [View Live Site](https://portable-profile-v2.herokuapp.com)
+
+⚙️ [Download Chrome Extension](https://portable-profile-v2.herokuapp.com/portable-profile-wechat-style-chrome-ext.zip)
 
 Job seekers are able to scan a QR code attached to a form to transmit their information to the service provider. The job seeker's data is stored directly on their device in their browser's local storage.
 
