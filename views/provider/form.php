@@ -14,7 +14,7 @@
 		$server = "http://leo.local/portable-profile-wechat-style/git";
 	} else {
 	
-		$server = "https://portable-profile.herokuapp.com";
+		$server = "https://portable-profile-v2.herokuapp.com";
 	}
 	
 	$qr_code_url = $server."/views/user/fill-form.php?qr_code_id=".$inserted_id;	
