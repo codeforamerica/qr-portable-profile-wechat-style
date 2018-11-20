@@ -47,8 +47,10 @@
 						data: files,                         
 						type: 'post',
 						success: function(urls) {
+							console.log(urls);
 							if(urls) {
 								if(urls.file1) {
+									console.log(urls.file1);
 									localStorage.setItem("file1", urls.file1);
 								}
 								if(urls.file2) {
