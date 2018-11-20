@@ -33,7 +33,7 @@
 					var file_data = $('#file1').prop('files')[0];   
 				    var form_data = new FormData();                  
 				    form_data.append('file', file_data);
-				    alert(form_data);                             
+
 				    $.ajax({
 				        url: '../../controllers/upload-file.php', // point to server-side PHP script 
 				        dataType: 'text',  // what to expect back from the PHP script, if anything
@@ -43,7 +43,7 @@
 				        data: form_data,                         
 				        type: 'post',
 				        success: function(php_script_response){
-				            alert(php_script_response); // display response from the PHP script, if any
+				            console.log(php_script_response); // display response from the PHP script, if any
 				        }
 				     });
 					
