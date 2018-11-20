@@ -57,6 +57,15 @@
 			<label for="notes">Notes</label>
 			<br><br>
 			<textarea name="notes"></textarea>
+			<br><br>
+			<label for="files">Save Documents</label>
+			<br><br>
+			<input name="file1" id="file1" type="file" accept="image/*;capture=camera">
+			<br><br>
+			<input name="file2" id="file2" type="file" accept="image/*;capture=camera">
+			<br><br>
+			<input name="file3" id="file3" type="file" accept="image/*;capture=camera">
+			<br>
 			<br>
 			<br>
 			<br>
