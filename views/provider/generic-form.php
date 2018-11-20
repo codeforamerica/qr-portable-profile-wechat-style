@@ -36,6 +36,12 @@
 			<br>
 			<input type="submit" value="Save">
 		</form>
+		
+		<div id="user-images">
+			<div id="file1"><a href="#file1" target="blank"><img src="#file1"></a></div>
+			<div id="file2"><a href="#file2" target="blank"><img src="#file2"></a></div>
+			<div id="file3"><a href="#file3" target="blank"><img src="#file3"></a></div>
+		</div>
 
 	</body>
 </html>

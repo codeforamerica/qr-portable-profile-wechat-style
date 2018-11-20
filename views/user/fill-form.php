@@ -84,6 +84,10 @@
 			<label for="notes">Notes</label>
 			<br><br>
 			<textarea name="notes"></textarea>
+			<input name="file2" id="file1" type="hidden">
+			<input name="file2" id="file2" type="hidden">
+			<input name="file3" id="file3" type="hidden">
+			<br>
 			<br>
 			<br>
 			<br>

@@ -1,8 +1,8 @@
 <?php
-	if(	$_SERVER["REMOTE_ADDR"] == "localhost" ||
-		$_SERVER["REMOTE_ADDR"] == "leo.local" ||
-		$_SERVER["REMOTE_ADDR"] == "::1" ||
-		strpos($_SERVER["REMOTE_ADDR"], '192.168.1') !== false
+	if(	$_SERVER["HTTP_HOST"] == "localhost" ||
+		$_SERVER["HTTP_HOST"] == "leo.local" ||
+		$_SERVER["HTTP_HOST"] == "::1" ||
+		strpos($_SERVER["HTTP_HOST"], '192.168.1') !== false
 	) {
 		$db_credentials["server"] = "localhost";
 		$db_credentials["username"] = "root";
@@ -15,7 +15,5 @@
 		$db_credentials["username"] = $url["user"];
 		$db_credentials["password"] = $url["pass"];
 		$db_credentials["database"] = substr($url["path"], 1);
-	}
-	
-	mysqli_set_charset($db, "utf8");		
+	}	
 ?>

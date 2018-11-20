@@ -137,6 +137,27 @@ html, body {
 		font-weight: 600;
 	}
 	
+	#user-images {
+		position: absolute;
+	    left: 520px;
+	    top: 137px;
+		
+		#file1, #file2, #file3 {
+			display: none;
+			
+			img {
+				max-height: 200px;
+				cursor: zoom-in;
+				transition: 0.2s all;
+				margin-bottom: 50px;
+				
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+	
 	@media @mobile {
 		input, textarea {
 			-webkit-appearance: none;

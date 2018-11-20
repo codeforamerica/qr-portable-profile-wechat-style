@@ -6,7 +6,17 @@
 	$inserted_id = $db->insert_id;
 	$db->close();
 
-	$server = "https://portable-profile-v2.herokuapp.com";
+	if(	$_SERVER["HTTP_HOST"] == "localhost" ||
+		$_SERVER["HTTP_HOST"] == "leo.local" ||
+		$_SERVER["HTTP_HOST"] == "::1" ||
+		strpos($_SERVER["HTTP_HOST"], '192.168.1') !== false
+	) {
+		$server = "http://leo.local/portable-profile-wechat-style/git";
+	} else {
+	
+		$server = "https://portable-profile.herokuapp.com";
+	}
+	
 	$qr_code_url = $server."/views/user/fill-form.php?qr_code_id=".$inserted_id;	
 ?>
 <!DOCTYPE HTML>
@@ -29,6 +39,24 @@
 							$.each(user_info, function(key, value) {
 								$("form [name='"+key+"']").val(value);
 							});
+							
+							if(user_info.file1) {
+								$("#user-images #file1").show();
+								$("#user-images #file1 a").attr("href", user_info.file1);
+								$("#user-images #file1 a img").attr("src", user_info.file1);
+							}
+							
+							if(user_info.file2) {
+								$("#user-images #file2").show();
+								$("#user-images #file2 a").attr("href", user_info.file2);
+								$("#user-images #file2 a img").attr("src", user_info.file2);
+							}
+							
+							if(user_info.file3) {
+								$("#user-images #file3").show();
+								$("#user-images #file3 a").attr("href", user_info.file3);
+								$("#user-images #file3 a img").attr("src", user_info.file3);
+							}
 						} else {
 					        check_for_data();
 						}
@@ -43,7 +71,7 @@
 	<body>
 		Scan the code below to fill in your information:
 		<br>
-		<img src="../../controllers/generate-qr-code.php?data=<?php echo $qr_code_url; ?>">
+		<img src="../../controllers/generate-qr-code.php?data=<?php echo $qr_code_url; ?>" data-qr-code-url="<?php echo $qr_code_url; ?>">
 		<br>
 		<br>
 
@@ -68,5 +96,11 @@
 			<br>
 			<input type="submit" value="Save">
 		</form>
+		
+		<div id="user-images" style="top: 259px;">
+			<div id="file1"><a href="#file1" target="blank"><img src="#file1"></a></div>
+			<div id="file2"><a href="#file2" target="blank"><img src="#file2"></a></div>
+			<div id="file3"><a href="#file3" target="blank"><img src="#file3"></a></div>
+		</div>
 	</body>
 </html>
