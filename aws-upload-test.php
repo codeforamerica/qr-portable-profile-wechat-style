@@ -2,6 +2,7 @@
 require('vendor/autoload.php');
 
 $s3 = Aws\S3\S3Client::factory(array(
+	'region' => getenv('BUCKETEER_AWS_REGION'),
     'credentials' => array(
         'key'    => getenv('BUCKETEER_BUCKET_NAME'),
         'secret' => getenv('BUCKETEER_AWS_SECRET_ACCESS_KEY'),
