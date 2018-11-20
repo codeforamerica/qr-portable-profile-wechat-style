@@ -32,7 +32,7 @@
 					
 					var file_data = $('#file1').prop('files')[0];   
 				    var form_data = new FormData();                  
-				    form_data.append('file', file_data);
+				    form_data.append('file1', file_data);
 
 				    $.ajax({
 				        url: '../../controllers/upload-file.php', // point to server-side PHP script 
