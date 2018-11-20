@@ -33,23 +33,33 @@
 					var file1 = $('#file1').prop('files')[0]; 
 					var file2 = $('#file2').prop('files')[0];  
 					var file3 = $('#file3').prop('files')[0];  
-				    var files = new FormData();                  
-				    files.append('file1', file1);           
-				    files.append('file2', file2);           
-				    files.append('file3', file3);
+					var files = new FormData();                  
+					files.append('file1', file1);           
+					files.append('file2', file2);           
+					files.append('file3', file3);
 
-				    $.ajax({
-				        url: '../../controllers/upload-files.php', // point to server-side PHP script 
-				        dataType: 'text',  // what to expect back from the PHP script, if anything
-				        cache: false,
-				        contentType: false,
-				        processData: false,
-				        data: files,                         
-				        type: 'post',
-				        success: function(urls) {
-				            console.log(urls);
-				        }
-				     });
+					$.ajax({
+						url: '../../controllers/upload-files.php', // point to server-side PHP script 
+						dataType: 'text',  // what to expect back from the PHP script, if anything
+						cache: false,
+						contentType: false,
+						processData: false,
+						data: files,                         
+						type: 'post',
+						success: function(urls) {
+							if(urls) {
+								if(urls.file1) {
+									localStorage.setItem("file1", urls.file1);
+								}
+								if(urls.file2) {
+									localStorage.setItem("file2", urls.file2);
+								}
+								if(urls.file3) {
+									localStorage.setItem("file3", urls.file3);
+								}
+							}
+						}
+					});
 					
 					$("input[type=submit]").val("Saved!").css("background", "#72CE0E");
 					
