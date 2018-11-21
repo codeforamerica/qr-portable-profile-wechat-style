@@ -24,7 +24,9 @@
 					}
 				});
 				
-				console.log(localStorage);
+				if(localStorage.file1) { $("#user-images").append("<img src='"+localStorage.file1+"'>"); }
+				if(localStorage.file2) { $("#user-images").append("<img src='"+localStorage.file2+"'>"); }
+				if(localStorage.file3) { $("#user-images").append("<img src='"+localStorage.file3+"'>"); }
 			
 				$("a#yes").click(function() {
 					$.each($('form').serializeArray(), function(i, field) {
@@ -86,6 +88,7 @@
 			<label for="notes">Notes</label>
 			<br><br>
 			<textarea name="notes"></textarea>
+			<div id="user-images-thumbnails"></div>
 			<input name="file1" id="file1" type="hidden">
 			<input name="file2" id="file2" type="hidden">
 			<input name="file3" id="file3" type="hidden">
