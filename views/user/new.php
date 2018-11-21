@@ -47,18 +47,15 @@
 						data: files,                         
 						type: 'post',
 						success: function(urls) {
-							alert(urls);
-							if(urls) {
-								if(urls.file1) {
-									alert(urls.file1);
-									localStorage.setItem("file1", urls.file1);
-								}
-								if(urls.file2) {
-									localStorage.setItem("file2", urls.file2);
-								}
-								if(urls.file3) {
-									localStorage.setItem("file3", urls.file3);
-								}
+							if(urls.file1) {
+								alert(urls.file1);
+								localStorage.setItem("file1", urls.file1);
+							}
+							if(urls.file2) {
+								localStorage.setItem("file2", urls.file2);
+							}
+							if(urls.file3) {
+								localStorage.setItem("file3", urls.file3);
 							}
 						}
 					});
