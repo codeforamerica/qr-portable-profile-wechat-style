@@ -47,11 +47,11 @@
 						data: files,                         
 						type: 'post',
 						success: function(urls_json) {
-							urls = JSON.parse(urls_json);
+							var urls = JSON.parse(urls_json);
 							localStorage.setItem("file1", urls.file1);
 							localStorage.setItem("file2", urls.file2);
 							localStorage.setItem("file3", urls.file3);
-							alert("Saved:"+urls.file1+" and "+urls.file2+" and "+urls.file3)
+							alert("Saved:"+urls.file1+" and "+urls.file2+" and "+urls.file3);
 						}
 					});
 					
