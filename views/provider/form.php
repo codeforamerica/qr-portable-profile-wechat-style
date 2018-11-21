@@ -40,19 +40,19 @@
 								$("form [name='"+key+"']").val(value);
 							});
 							
-							if(user_info.file1) {
+							if(user_info.file1 != "undefined") {
 								$("#user-images #file1").show();
 								$("#user-images #file1 a").attr("href", user_info.file1);
 								$("#user-images #file1 a img").attr("src", user_info.file1);
 							}
 							
-							if(user_info.file2) {
+							if(user_info.file2 != "undefined") {
 								$("#user-images #file2").show();
 								$("#user-images #file2 a").attr("href", user_info.file2);
 								$("#user-images #file2 a img").attr("src", user_info.file2);
 							}
 							
-							if(user_info.file3) {
+							if(user_info.file3 != "undefined") {
 								$("#user-images #file3").show();
 								$("#user-images #file3 a").attr("href", user_info.file3);
 								$("#user-images #file3 a img").attr("src", user_info.file3);
