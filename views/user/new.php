@@ -16,7 +16,7 @@
             $(document).ready(function() {
 								
 				$.each(localStorage, function(key, value) {
-					if(key != "auto_saved_sql") {
+					if(key != "auto_saved_sql" && key != "file1" && key != "file2" && key != "file3") {
 						$("form [name='"+key+"']").val(value);
 					}
 				});
