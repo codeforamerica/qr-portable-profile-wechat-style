@@ -24,9 +24,9 @@
 					}
 				});
 				
-				if(localStorage.file1) { $("#user-images").append("<img src='"+localStorage.file1+"'>"); }
-				if(localStorage.file2) { $("#user-images").append("<img src='"+localStorage.file2+"'>"); }
-				if(localStorage.file3) { $("#user-images").append("<img src='"+localStorage.file3+"'>"); }
+				if(localStorage.file1) { $("#user-images-thumbnails").append("<img src='"+localStorage.file1+"'>"); }
+				if(localStorage.file2) { $("#user-images-thumbnails").append("<img src='"+localStorage.file2+"'>"); }
+				if(localStorage.file3) { $("#user-images-thumbnails").append("<img src='"+localStorage.file3+"'>"); }
 			
 				$("a#yes").click(function() {
 					$.each($('form').serializeArray(), function(i, field) {
