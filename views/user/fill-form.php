@@ -23,6 +23,8 @@
 						$("form [name='"+key+"']").val(value);
 					}
 				});
+				
+				console.log(localStorage);
 			
 				$("a#yes").click(function() {
 					$.each($('form').serializeArray(), function(i, field) {
