@@ -47,7 +47,7 @@
 						data: files,                         
 						type: 'post',
 						success: function(urls) {
-							console.log(urls);
+							alert(urls);
 							if(urls) {
 								if(urls.file1) {
 									alert(urls.file1);
