@@ -46,7 +46,8 @@
 						processData: false,
 						data: files,                         
 						type: 'post',
-						success: function(urls) {
+						success: function(urls_json) {
+							urls = JSON.parse(urls_json);
 							localStorage.setItem("file1", urls.file1);
 							localStorage.setItem("file2", urls.file2);
 							localStorage.setItem("file3", urls.file3);
